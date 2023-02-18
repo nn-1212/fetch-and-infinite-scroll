@@ -19,11 +19,12 @@ function App() {
     <div className="App">
         <h1>Gallery</h1>
         {coinData.map((item)=>{
-          return <div>{item.id}
+          return (<>
+          <div className='text-red-500'>{item.id}</div>
           <img src={item.image} alt=""/>
           <p>{item.current_price}</p>
           
-          </div>
+        </>)
         })}
            
           
